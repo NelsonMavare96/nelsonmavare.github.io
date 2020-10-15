@@ -1,12 +1,12 @@
 import React from "react";
 
 //import stock
-import stock from "../img/image1.jpg";
-import stock1 from "../img/image2.jpg";
-import stock2 from "../img/image3.jpg";
-import stock3 from "../img/image4.jpg";
-import stock4 from "../img/image5.jpg";
-import stock5 from "../img/image6.jpg";
+import stock from "../img/flycatcherLogo.jpg";
+import stock1 from "../img/flycatcherLogo.jpg";
+import stock2 from "../img/flycatcherLogo.jpg";
+import stock3 from "../img/flycatcherLogo.jpg";
+import stock4 from "../img/flycatcherLogo.jpg";
+import stock5 from "../img/flycatcherLogo.jpg";
 
 class Portfolio extends React.Component {
   render() {

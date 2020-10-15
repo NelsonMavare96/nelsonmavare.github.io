@@ -1,14 +1,67 @@
 import React from "react";
 import imageOverlay from "../img/earth.jpg";
+import { Icon, InlineIcon } from '@iconify/react';
+import logoBehance from '@iconify/icons-ion/logo-behance';
+import logoTwitter from '@iconify/icons-ion/logo-twitter';
+import logoInstagram from '@iconify/icons-ion/logo-instagram';
+import logoFacebook from '@iconify/icons-ion/logo-facebook';
+import logoLinkedin from '@iconify/icons-ion/logo-linkedin';
+import logoGitHub from '@iconify/icons-ion/logo-github';
+import { FaArtstation } from 'react-icons/fa';
 
 class Contact extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      artistSocialMedia: [
+        {
+          id: "instagram",
+          content: logoInstagram,
+          link:"https://www.instagram.com/clowth",
+         },
+        {
+          id: "facebook",
+          content: logoFacebook,
+          link:"https://www.facebook.com/ClowthArt",
+        },
+        {
+          id: "twitter",
+          content: logoTwitter,
+          link:"",
+        },
+        {
+          id: "behance",
+          content: logoBehance,
+          link:"https://www.behance.net/NelsonMavare",
+        },
+        {
+          id: "linkedin",
+          content: logoLinkedin,
+          link:"https://www.linkedin.com/in/nelson-mavare-illustrator/",
+        },
+      ],
+      developerSocialMedia: [
+        {
+          id: "linkedin",
+          content: logoLinkedin,
+          link:"https://www.linkedin.com/in/nelson-mavare-developer/",
+        },
+        {
+          id: "github",
+          content: logoGitHub,
+          link:"https://github.com/nelsonmavare",
+        },
+      ]
+    };
+  }
   render() {
+    const {artistSocialMedia, developerSocialMedia} = this.state;
     return (
       <section
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
-        style={{ backgroundImage: "url(" + imageOverlay + ")" }}
+        //style={{ backgroundImage: "url(" + imageOverlay + ")" }}
       >
-        <div className="overlay-mf"></div>
+       <div className="overlay-mf" style={{opacity:1}}></div> 
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
@@ -17,11 +70,11 @@ class Contact extends React.Component {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="title-box-2">
-                        <h5 className="title-left">Send A Message</h5>
+                        <h5 className="title-left">Send A Message (doesn't work yet hehe)</h5>
                       </div>
                       <div>
                         <form
-                          action="https://formspree.io/xdoeonlo"
+                          action=""
                           method="POST"
                           className="contactForm"
                         >
@@ -99,15 +152,11 @@ class Contact extends React.Component {
                     </div>
                     <div className="col-md-6">
                       <div className="title-box-2 pt-4 pt-md-0">
-                        <h5 className="title-left">Get in Touch</h5>
+                        <h5 className="title-left">Contact</h5>
                       </div>
                       <div className="more-info">
                         <p className="lead">
-                          Whether you want to get in touch, talk about a project
-                          collaboration, or just say hi, I'd love to hear from
-                          you.
-                          <br />
-                          Simply fill the from and send me an email.
+                          If you want contact me you can send me a mail trought the left form, or you can send me a message on any of social media below!
                         </p>
                         {/* <!-- <ul class="list-ico">
                                 <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
@@ -117,39 +166,52 @@ class Contact extends React.Component {
                       </div>
                       <div className="socials">
                         <ul>
-                          <li>
-                            <a
-                              href=""
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-codepen"></i>
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href=""
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-github"></i>
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href=""
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-linkedin"></i>
-                              </span>
-                            </a>
-                          </li>
+                            {artistSocialMedia.map(artistSocialMedia=>{
+                              return(
+                                <li>
+                                  <a
+                                    href={artistSocialMedia.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <span className="ico-circle">
+                                      <Icon style={{height:"100%",verticalAlign:"top"}} icon={artistSocialMedia.content} />
+                                    </span>
+                                  </a>
+                                </li>
+                              ) 
+                            })}
+                            <li>
+                                <a
+                                  href=""
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <span className="ico-circle">
+                                    <FaArtstation style={{height:"100%",verticalAlign:"top"}} />
+                                  </span>
+                                </a>
+                              </li>
+                            
+                        </ul>
+                      </div>
+                      <div className="socials">
+                        <ul>
+                            {developerSocialMedia.map(developerSocialMedia =>{
+                              return(
+                                <li>
+                                  <a
+                                    href={developerSocialMedia.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <span className="ico-circle">
+                                      <Icon style={{height:"100%",verticalAlign:"top"}} icon={developerSocialMedia.content} />
+                                    </span>
+                                  </a>
+                                </li>
+                              ) 
+                            })}
                         </ul>
                       </div>
                     </div>
@@ -164,6 +226,7 @@ class Contact extends React.Component {
             <div className="row">
               <div className="col-sm-12">
                 <div className="copyright-box">
+                  All Rights Reserved © 2020
                 </div>
               </div>
             </div>
@@ -175,3 +238,5 @@ class Contact extends React.Component {
 }
 
 export default Contact;
+
+

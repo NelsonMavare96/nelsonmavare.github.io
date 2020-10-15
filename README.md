@@ -1,8 +1,9 @@
-# React-portfolio
+# Personal Portfolio
 
-A boilrplate react portfolio to showcase your projects and work
+Nelson Mavare Portfolio & Artist and Programmer resume
 
 
-Dummy-portfolio link -> https://shloksomani.github.io/react-portfolio/
+This React Template has been modificated
+Thanks to Shlok Somani for the original template!
 
-![](test.gif)
+
