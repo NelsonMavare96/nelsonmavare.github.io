@@ -1,6 +1,5 @@
 import React from "react";
-import imageOverlay from "../img/earth.jpg";
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import logoBehance from '@iconify/icons-ion/logo-behance';
 import logoTwitter from '@iconify/icons-ion/logo-twitter';
 import logoInstagram from '@iconify/icons-ion/logo-instagram';
@@ -166,9 +165,9 @@ class Contact extends React.Component {
                       </div>
                       <div className="socials">
                         <ul>
-                            {artistSocialMedia.map(artistSocialMedia=>{
+                            {artistSocialMedia.map((artistSocialMedia,index)=>{
                               return(
-                                <li>
+                                <li key={index}>
                                   <a
                                     href={artistSocialMedia.link}
                                     target="_blank"
@@ -183,7 +182,7 @@ class Contact extends React.Component {
                             })}
                             <li>
                                 <a
-                                  href=""
+                                  href="https://artstation.com/clowth"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
@@ -197,9 +196,9 @@ class Contact extends React.Component {
                       </div>
                       <div className="socials">
                         <ul>
-                            {developerSocialMedia.map(developerSocialMedia =>{
+                            {developerSocialMedia.map((developerSocialMedia,index) =>{
                               return(
-                                <li>
+                                <li key={index}>
                                   <a
                                     href={developerSocialMedia.link}
                                     target="_blank"

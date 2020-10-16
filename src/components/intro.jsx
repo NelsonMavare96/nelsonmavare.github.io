@@ -34,22 +34,24 @@ class Intro extends React.Component {
                   />
                 </strong>
               </p>
-              <p className="pt-3">
+              <p className="pt-3" style={{marginTop:"1rem"}}>
                 <a
                   className="btn btn-primary btn js-scroll px-4"
-                  style= {{marginRight:10,marginLeft:10}}
-                  href="#work"
+                  style= {{margin:10}}
+                  href={constants.ARTIST_RESUME}
+                  target="_blank"
                   role="button"
                 >
-                  View My Work
+                  Artist Resume
                 </a>
                 <a
                   className="btn btn-primary btn js-scroll px-4"
-                  style= {{marginRight:10,marginLeft:10}}
-                  href=""
+                  style= {{margin:10}}
+                  href="#work"
+                  target="_blank"
                   role="button"
                 >
-                  View My Work
+                  Developer Resume
                 </a>
               </p>
               

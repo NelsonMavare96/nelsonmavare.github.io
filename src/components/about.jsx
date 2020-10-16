@@ -38,7 +38,7 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-          "Hi! my name is Nelson Mavare, I am from Venezuela.I'm a software engineer centered on FrontEnd and I'm also a freelance artist who focuses on character and creature development."
+          "Hi! my name is Nelson Mavare, I am from Venezuela. I'm a software engineer centered on FrontEnd and I'm also a freelance artist who focuses on character and creature development."
         },
         {
           id: "second-p-about",
