@@ -207,7 +207,7 @@ a:hover {
   font-size: 1.7rem;
   border-radius: 50%;
   line-height: 1.4;
-  margin: 0 15px 0 0;
+  margin: 0 15px 10px 0;
   box-shadow: 0 0 0 3px #1B2735 ;
   transition: all 500ms ease;
 }
@@ -253,6 +253,13 @@ a:hover {
   margin: 0 auto;
   text-align: center;
   box-shadow: 0 0 0 10px #1B2735 ;
+  display: block;
+}
+.ico-social {
+  height: 120px !important;
+  width: 120px !important;
+  font-size: 5rem !important;
+  margin: 0 15px 10px 15px !important;
   display: block;
 }
 

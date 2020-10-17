@@ -1,10 +1,10 @@
 import React from "react";
 import PortfolioElement from "./portfolioElement.jsx"
 import * as constants from "../constants";
-//import { useTransition, animated } from "react-spring";
-import { Spring } from 'react-spring/renderprops'
-import { Transition, animated } from 'react-spring/renderprops'
-import Fade from 'react-bootstrap/Fade'
+// import { useTransition, animated } from "react-spring";
+// import { Spring } from 'react-spring/renderprops'
+// import { Transition, animated } from 'react-spring/renderprops'
+// import Fade from 'react-bootstrap/Fade'
 import Collapse from 'react-bootstrap/Collapse'
 
 class Portfolio extends React.Component {
@@ -75,7 +75,6 @@ class Portfolio extends React.Component {
                   <button
                     className="btn btn-primary btn js-scroll px-4"
                     style= {{margin:10, color:"white"}}
-                    role="button"
                     onClick={()=>{this.onHandlePortfolioTypeChange(true)}}
                   >
                     Artist
@@ -83,7 +82,6 @@ class Portfolio extends React.Component {
                   <button
                     className="btn btn-primary btn js-scroll px-4"
                     style= {{margin:10, color:"white"}}
-                    role="button"
                     onClick={()=>{this.onHandlePortfolioTypeChange(false)}}
                   >
                     Developer

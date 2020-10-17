@@ -8,9 +8,9 @@ class PortfolioElement extends React.Component {
     super();
   }
   render() {
-    const {element} = this.props;
+    const {element, key} = this.props;
     return (
-        <div className="col-md-4">
+        <div className="col-md-4" key={element.id}>
         <div className="work-box" style={{marginBottom:'2rem'}}>
           <a href={element.images[0]} data-lightbox={element.id}>
             <div className="work-img" style={{justifyContent:'center',display:'flex'}}>
