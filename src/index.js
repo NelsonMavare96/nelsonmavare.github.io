@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
+import { render } from 'react-dom'
 
 //import css in order
 import 'normalize.css';
@@ -22,7 +23,7 @@ import * as serviceWorker from './serviceWorker';
 
 import MainLayout from './layouts/mainLayout'
 
-ReactDOM.render(
+render(
     <MainLayout/>,
 document.getElementById('root'));
 

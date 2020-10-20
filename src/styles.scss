@@ -1,8 +1,10 @@
 
-//Special thanks to https://codepen.io/pizza3 for this styling
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100');
 $font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+/**********************************************************************************/
+/**********************************************************************************/
+//Special thanks to https://codepen.io/pizza3 for this styling
 
 @mixin button($bcolor,
 $url,
@@ -162,7 +164,8 @@ $col) {
   mask-position: 0 0;
  }
 }
-
+/****************************************************************************************************/
+/****************************************************************************************************/
 .center-elements {
     justify-content: center;
     display: flex;

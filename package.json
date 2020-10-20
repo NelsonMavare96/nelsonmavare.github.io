@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://nelsonmavare.github.io/",
+  "homepage": "https://nelsonmavare.github.io",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "emailjs-com": "^2.6.3",

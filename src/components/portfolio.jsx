@@ -82,7 +82,7 @@ class Portfolio extends React.Component {
                   <button
                     className="btn btn-primary btn js-scroll px-4"
                     style= {{margin:10, color:"white"}}
-                    onClick={()=>{this.onHandlePortfolioTypeChange(false)}}
+                    onClick={()=>{this.onHandlePortfolioTypeChange(false);}}
                   >
                     Developer
                   </button>
