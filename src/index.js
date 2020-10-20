@@ -9,6 +9,7 @@ import './img/icons/css/ionicons.css';
 import './img/font-awesome/css/font-awesome.css';
 import 'lightbox2/dist/css/lightbox.min.css'
 import './style.css';
+import './styles.scss'
 
 //import js libraries
 import 'jquery/dist/jquery.min.js';
@@ -19,32 +20,13 @@ import 'lightbox2/dist/js/lightbox.min.js';
 
 import * as serviceWorker from './serviceWorker';
 
-//import components
-import Navbar from './components/navbar.jsx';
-import Intro from './components/intro.jsx';
-import About from './components/about.jsx';
-import Portfolio from './components/portfolio.jsx';
-import Contact from './components/contact.jsx';
-import BackToTop from './components/back-top.jsx';
-import Preloader from './components/preloader';
-import Social from './components/social'
-
-
+import MainLayout from './layouts/mainLayout'
 
 ReactDOM.render(
-    <React.Fragment>
-        <Navbar />
-        <Intro />
-        <Portfolio />
-        <Social/>
-        <About />
-        <Contact />
-        <BackToTop />
-        <Preloader />
-    </React.Fragment>,
+    <MainLayout/>,
 document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register(); //REVISAR

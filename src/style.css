@@ -1005,3 +1005,39 @@ BUTTON
     bottom: 15px;
   }
 }
+.portfolio-type-button-container {
+  height: 14vw !important;
+  width: 24vw !important;
+}
+.row-type-portfolio{
+  padding: 0 7vw ;
+  margin-top: 2vh ;
+}
+@media (min-width: 1400px){
+  .row-type-portfolio{
+    padding: 0 !important;
+  }
+  .portfolio-type-button-container {
+    height: 13vw !important;
+    width: 24vw !important;
+  }
+}
+
+@media (max-width: 990px){
+  .portfolio-type-button-container {
+    margin: 30px 20px !important;
+    height: 19vh !important;
+    width: 32vh !important;
+  }
+  .portfolio-type-button{
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 550px){
+  .portfolio-type-button-container button{
+    font-size: 7vw !important;
+  }
+}
+
+
