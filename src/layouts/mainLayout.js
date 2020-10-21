@@ -4,8 +4,10 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    Redirect
   } from "react-router-dom";
+import history from '../history'
 
 //import components
 import Navbar from '../components/navbar.jsx';
@@ -23,6 +25,16 @@ import SelectType from '../components/portfolio/selectType.jsx'
 class Main extends React.Component {
   constructor(props) {
     super(props);
+  }
+  componentDidMount(){
+    let path = localStorage.getItem('path');
+    console.log(path)
+    if(path) {
+      localStorage.removeItem('path');
+      history.push("/"+path)
+      //<Redirect to={"/"+path} />
+      //this.router.navigate([path]);
+    }
   }
 
   render() {
