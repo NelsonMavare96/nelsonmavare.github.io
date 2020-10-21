@@ -1,5 +1,9 @@
-<script>
+<!-- <script>
     const path = window.location.pathname.slice(1);
     localStorage.setItem('path', path);
     window.location.href='../';
+</script> -->
+<script>
+    sessionStorage.redirect = location.href;
 </script>
+<meta http-equiv="refresh" content="0;URL='/'">

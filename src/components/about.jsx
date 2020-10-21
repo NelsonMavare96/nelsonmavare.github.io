@@ -48,7 +48,7 @@ class About extends React.Component {
         {
           id: "third-p-about",
           content:
-          "Since I was a child I have liked fantasy and whole worlds of magic and fantastic creatures that no one had seen before. All of this inspired me to learn to draw when I was 16 years old, taking references from many current artists such as Stanley Lau, Ross Tran, Peter Peter Mohrbacher, Dmitry Prozorov, who have inspired me to be better and better in my work."
+          "Since I was a child I have liked fantasy and whole worlds of magic and fantastic creatures that no one had seen before. All of this inspired me to learn to draw when I was 16 years old, taking references from many current artists such as Stanley Lau, Ross Tran, Peter Mohrbacher, Dmitry Prozorov, who have inspired me to be every day much better in my work."
         },
         {
           id: "fourth-p-about",
