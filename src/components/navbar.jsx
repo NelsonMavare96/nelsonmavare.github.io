@@ -83,6 +83,7 @@ class Navbar extends React.Component {
       <nav
         className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
         id="mainNav"
+        style={{zIndex:900}}
       >
         <div className="container">
           <a className="navbar-brand js-scroll" href="#page-top">

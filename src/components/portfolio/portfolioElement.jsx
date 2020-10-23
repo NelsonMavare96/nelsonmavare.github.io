@@ -1,7 +1,7 @@
 import React from "react";
 
 //import stock
-import * as constants from "../constants";
+import * as constants from "../../constants";
 
 class PortfolioElement extends React.Component {
   constructor() {

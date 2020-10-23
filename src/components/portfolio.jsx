@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioElement from "./portfolioElement.jsx"
+import PortfolioElement from "./portfolio/portfolioElement.jsx"
 import * as constants from "../constants";
 // import { useTransition, animated } from "react-spring";
 // import { Spring } from 'react-spring/renderprops'

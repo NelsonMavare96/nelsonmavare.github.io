@@ -22,6 +22,9 @@ import Social from '../components/social'
 import HomeLayout from './homeLayout'
 import SelectType from '../components/portfolio/selectType.jsx'
 
+import ArtistPortfolio from '../components/portfolio/artistPortfolio.jsx'
+import PortfolioBanner from '../components/portfolio/banner'
+
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -41,7 +44,12 @@ class Main extends React.Component {
     return(
     <Router basename={process.env.REACT_APP_PUBLIC_URL}>
         <Switch>         
-            <Route path="/portfolio" component={SelectType} />
+            <Route exact path="/portfolio" component={SelectType} />
+            <Route exact path="/portfolio/artist">
+              <Navbar/>
+              <PortfolioBanner/>
+              <ArtistPortfolio/>
+            </Route>
             <Route exact path="/" component={HomeLayout}/>        
         </Switch>
     </Router>

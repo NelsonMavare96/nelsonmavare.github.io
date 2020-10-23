@@ -3,6 +3,7 @@ import "../stars.scss";
 import Typed from "react-typed";
 import * as constants from "../../constants"
 import Navbar from '../navbar.jsx';
+import {Link} from 'react-router-dom'
 
 class SelectType extends React.Component {
   
@@ -29,11 +30,12 @@ class SelectType extends React.Component {
                             >
                             Artist Resume
                             </button> */}
-                            
-                            <div class="button-container-2  portfolio-type-button-container">
-                              <span class="mas " >View more</span>
-                              <button type="button" name="Hover">Artist</button>
-                            </div>
+                            <Link to="/portfolio/artist">
+                              <div class="button-container-2  portfolio-type-button-container">
+                                <span class="mas " >View more</span>
+                                <button type="button" name="Hover">Artist</button>
+                              </div>
+                            </Link>
                         </div>
                         <div className="col-md-6 center-elements">
                             {/* <button
