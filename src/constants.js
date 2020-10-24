@@ -1,3 +1,5 @@
+export const IMG_PROFILE = "https://res.cloudinary.com/clowth/image/upload/v1603471308/profile_image_fjiyml.jpg"
+
 export const MAIN_PICTURE = "https://res.cloudinary.com/clowth/image/upload/v1602784728/Griffin_iocdbf.jpg"
 
 export const ARTIST_RESUME = "https://drive.google.com/file/d/1KDNouIqLaEKBOe3lu9zeaKPhPYAcNLUr/view?usp=sharing"

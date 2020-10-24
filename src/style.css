@@ -1043,12 +1043,28 @@ BUTTON
 .portfolio-banner-title{
   color: #fff;
     font-weight: 600;
-    font-size: 2.5rem;
+    margin: revert;
+    font-size: 2rem;
+}
+
+.portfolio-banner-button{
+  color:white;
+}
+
+.portfolio-banner-button:hover{
+  color:#4b4a50;
+}
+.portfolio-banner-button:focus{
+  box-shadow: none
+}
+.portfolio-banner-button-selected{
+  color: #0e151d;
+  background: #f5f5f5
 }
 
 @media (min-width: 768px){
   .portfolio-banner-title{
-    font-size: 3.5rem !important;
+    font-size: 2.5rem !important;
   }
 }
 

@@ -12,6 +12,9 @@ class ArtistPortfolio extends React.Component {
     this.state = {
       currentImage:0,
       viewerIsOpen:false,
+      myProjects:false,
+      myIllustrations:true,
+      scraps:false,
       artElements: [
         { 
           id: "max1-gallery", 
@@ -39,6 +42,24 @@ class ArtistPortfolio extends React.Component {
     };
   }
 
+handleShowGallery(type){
+  if(type==='projects'){
+    this.setState({myProjects:true})
+    this.setState({myIllustrations:false})
+    this.setState({scraps:false})
+  }
+  else if(type==='illustrations'){
+    this.setState({myProjects:false})
+    this.setState({myIllustrations:true})
+    this.setState({scraps:false})
+  }
+  else if(type==='scraps'){
+    this.setState({myProjects:false})
+    this.setState({myIllustrations:false})
+    this.setState({scraps:true})
+  }
+}
+
 setCurrentImage(value){
   this.setState({currentImage: value})
 }
@@ -61,54 +82,48 @@ closeLightbox = () => {
       [
         
         {
-          source: {
-            download: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/The-Lady-of-the-rising-sun_mid_itneth.jpg",
-            fullscreen: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/The-Lady-of-the-rising-sun_mid_itneth.jpg",
-            regular: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/The-Lady-of-the-rising-sun_mid_itneth.jpg",
-            thumbnail: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/The-Lady-of-the-rising-sun_mid_itneth.jpg",
-          },
-          title:"Lady of the rising sun",
-          caption:"Ilustración realizada en photoshop"
+          source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/The-Lady-of-the-rising-sun_mid_itneth.jpg",
+          title:"Lady of the rising sun - 2020",
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/Honor_half_uqiobh.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          title: "Honor - 2020"
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/Zuko_peq_lui77t.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          title: "Prince Zuko - 2020"
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/The-Zabrak_peqInst_qjnuna.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          title: "The Zabrak - 2020"
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/samurai-jack_peq_mezysg.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          title: "Timeless warrior - 2020"
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/Knight-of-the-Kingdom_half_xkbrco.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          title: "Knight of the kingdom - 2020"
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/Only-the-stars-can-guide-us_half_eu56vw.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          title: "Only the stars can guide us (for the Emerald Muse) - 2019"
         },
         {
-          source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/Emerald-Dream_half_otnana.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          source: "https://res.cloudinary.com/clowth/image/upload/v1603377458/my%20art/Emerald-Dream_half_otnana.jpg",
+          title: "Emerald Dream (for the Emerald Muse) - 2019"
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/flycatcher_half_ekvr6u.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          title: "Vermillion Flycatcher - 2018"
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/my%20art/VarokSaurfang_half_uhdlkn.jpg",
-          caption: "Vermillion Flycatcher - 2018"
+          title: "High Overlord Varok Saurfang - 2018"
         },
         {
           source: "https://res.cloudinary.com/clowth/image/upload/v1602784728/Griffin_iocdbf.jpg",
-          caption: "Boats (Jeshu John - designerspics.com)"
+          title: "Griffin"
         },
 
       ]
@@ -176,40 +191,72 @@ closeLightbox = () => {
 
       
 
-    const {artistPortfolio, artElements,currentImage,viewerIsOpen} = this.state;
+    const {artistPortfolio, artElements,currentImage,viewerIsOpen, myProjects, myIllustrations, scraps} = this.state;
     return (
-      <section id="work" className="portfolio-mf route" style={{paddingTop:'5rem'}}>
-        <div className="container" style={{position:'relative'}}>
-
-          <div>
-            <div className="row" >
-              {artElements.map((element,index)=>{
-                return(
-                  <PortfolioElement element={element}/>
-                )
-              })}
-            </div>
-            <Gallery photos={thumbnails} onClick={(e,photos)=>{this.openLightbox(e,photos)}} />
-             <ModalGateway>
-              {viewerIsOpen ? (
-                <Modal onClose={this.closeLightbox}>
-                  <Carousel
-                    //styles={{background:'red'}}
-                    currentIndex={currentImage}
-                    views={images.map(x => ({
-                      ...x,
-                      srcset: x.srcSet,
-                      caption: x.title
-                    }))}
-                  />
-                </Modal>
-              ) : null}
-            </ModalGateway>
-            {/* <Gallery images={IMAGES_} enableImageSelection={false}/> */}
-          </div>
-
+      <div>
+        <div style={{width:"100%", height:'6vh', backgroundColor:'rgb(36 36 40)'}}>
+          <p className="center-elements">
+            <a
+              className={"btn js-scroll px-4 portfolio-banner-button "+(myProjects&&"portfolio-banner-button-selected")}
+              href="#"
+              role="button"
+              onClick={()=>{this.handleShowGallery('projects')}}
+            >
+              Projects
+            </a>
+            <a
+              className={"btn js-scroll px-4 portfolio-banner-button "+(myIllustrations&&"portfolio-banner-button-selected")}
+              href="#"
+              role="button"
+              onClick={()=>{this.handleShowGallery('illustrations')}}
+            >
+              My illustrations
+            </a>
+            <a
+              className={"btn js-scroll px-4 portfolio-banner-button "+(scraps&&"portfolio-banner-button-selected")}
+              href="#"
+              role="button"
+              onClick={()=>{this.handleShowGallery('scraps')}}
+            >
+              Scraps
+            </a>
+          </p>
         </div>
-      </section>
+        <section id="work" className="portfolio-mf route" style={{paddingTop:'3rem'}}>
+          <div className="container" style={{position:'relative'}}>
+
+            <div>
+              <div className={"row "+(!myProjects&&" hide-section")}>
+                {artElements.map((element,index)=>{
+                  return(
+                    <PortfolioElement element={element}/>
+                  )
+                })}
+              </div>
+              <div class={!myIllustrations&&" hide-section"}>
+                <Gallery  photos={thumbnails} onClick={(e,photos)=>{this.openLightbox(e,photos)}} />
+                <ModalGateway>
+                  {viewerIsOpen ? (
+                    <Modal onClose={this.closeLightbox}>
+                      <Carousel
+                        //styles={{background:'red'}}
+                        currentIndex={currentImage}
+                        views={images.map(x => ({
+                          ...x,
+                          srcset: x.srcSet,
+                          caption: x.title
+                        }))}
+                      />
+                    </Modal>
+                  ) : null}
+                </ModalGateway>
+              </div>
+              {/* <Gallery images={IMAGES_} enableImageSelection={false}/> */}
+            </div>
+
+          </div>
+        </section>
+      </div>
     );
   }
 }
