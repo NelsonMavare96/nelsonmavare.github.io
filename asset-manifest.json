@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d92be6a.chunk.css",
-    "main.js": "/static/js/main.79ec89f8.chunk.js",
-    "main.js.map": "/static/js/main.79ec89f8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7b61e083.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7b61e083.js.map",
-    "static/css/2.a3aa6185.chunk.css": "/static/css/2.a3aa6185.chunk.css",
-    "static/js/2.b3318c4d.chunk.js": "/static/js/2.b3318c4d.chunk.js",
-    "static/js/2.b3318c4d.chunk.js.map": "/static/js/2.b3318c4d.chunk.js.map",
+    "main.css": "/static/css/main.d860eab6.chunk.css",
+    "main.js": "/static/js/main.359a0660.chunk.js",
+    "main.js.map": "/static/js/main.359a0660.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/css/2.ff45f594.chunk.css": "/static/css/2.ff45f594.chunk.css",
+    "static/js/2.2cd792ee.chunk.js": "/static/js/2.2cd792ee.chunk.js",
+    "static/js/2.2cd792ee.chunk.js.map": "/static/js/2.2cd792ee.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8333e2f3a57d0543c1331f1fd7de9632.js": "/precache-manifest.8333e2f3a57d0543c1331f1fd7de9632.js",
+    "precache-manifest.99a136d89c087e0db4472970e046df73.js": "/precache-manifest.99a136d89c087e0db4472970e046df73.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.a3aa6185.chunk.css.map": "/static/css/2.a3aa6185.chunk.css.map",
-    "static/css/main.2d92be6a.chunk.css.map": "/static/css/main.2d92be6a.chunk.css.map",
-    "static/js/2.b3318c4d.chunk.js.LICENSE": "/static/js/2.b3318c4d.chunk.js.LICENSE",
+    "static/css/2.ff45f594.chunk.css.map": "/static/css/2.ff45f594.chunk.css.map",
+    "static/css/main.d860eab6.chunk.css.map": "/static/css/main.d860eab6.chunk.css.map",
+    "static/js/2.2cd792ee.chunk.js.LICENSE.txt": "/static/js/2.2cd792ee.chunk.js.LICENSE.txt",
     "static/media/flycatcherLogo.jpg": "/static/media/flycatcherLogo.f651a736.jpg",
     "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/ionicons.css": "/static/media/ionicons.621bd386.svg",
     "static/media/styles.scss": "/static/media/urban-sprite.48448f3d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7b61e083.js",
-    "static/css/2.a3aa6185.chunk.css",
-    "static/js/2.b3318c4d.chunk.js",
-    "static/css/main.2d92be6a.chunk.css",
-    "static/js/main.79ec89f8.chunk.js"
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/css/2.ff45f594.chunk.css",
+    "static/js/2.2cd792ee.chunk.js",
+    "static/css/main.d860eab6.chunk.css",
+    "static/js/main.359a0660.chunk.js"
   ]
 }
