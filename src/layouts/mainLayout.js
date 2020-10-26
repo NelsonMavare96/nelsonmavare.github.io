@@ -33,7 +33,7 @@ class Main extends React.Component {
 
   render() {
     return(
-    <Router basename={process.env.REACT_APP_PUBLIC_URL}>
+    <Router>
         <Switch>         
             <Route exact path="/portfolio" component={SelectType} />
             <Route exact path="/portfolio/artist">
