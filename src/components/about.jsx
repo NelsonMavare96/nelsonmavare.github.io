@@ -17,7 +17,7 @@ class About extends React.Component {
           id: "JavaScript_skill",content: "JavaScript",porcentage: "90%",value: "90"
         },
         {
-          id: "ReactJS_skill",content: "ReactJS/ReactNative",porcentage: "80%",value: "80"
+          id: "ReactJS_skill",content: "ReactJS/ReactNative",porcentage: "90%",value: "90"
         },
         {
           id: "Python_skill",content: "Python",porcentage: "60%",value: "60"

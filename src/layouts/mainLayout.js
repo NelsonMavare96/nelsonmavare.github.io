@@ -23,21 +23,12 @@ import HomeLayout from './homeLayout'
 import SelectType from '../components/portfolio/selectType.jsx'
 
 import ArtistPortfolio from '../components/portfolio/artistPortfolio.jsx'
+import DeveloperPortfolio from '../components/portfolio/developerPortfolio.jsx'
 import PortfolioBanner from '../components/portfolio/banner'
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
-  }
-  componentDidMount(){
-    let path = localStorage.getItem('path');
-    console.log(path)
-    if(path) {
-      localStorage.removeItem('path');
-      history.push("/"+path)
-      //<Redirect to={"/"+path} />
-      //this.router.navigate([path]);
-    }
   }
 
   render() {
@@ -49,6 +40,13 @@ class Main extends React.Component {
               <Navbar/>
               <PortfolioBanner/>
               <ArtistPortfolio/>
+              <BackToTop />
+            </Route>
+            <Route exact path="/portfolio/developer">
+              <Navbar/>
+              <PortfolioBanner/>
+              <DeveloperPortfolio/>
+              <BackToTop />
             </Route>
             <Route exact path="/" component={HomeLayout}/>        
         </Switch>

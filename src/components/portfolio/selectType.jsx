@@ -31,8 +31,8 @@ class SelectType extends React.Component {
                             Artist Resume
                             </button> */}
                             <Link to="/portfolio/artist">
-                              <div class="button-container-2  portfolio-type-button-container">
-                                <span class="mas " >View more</span>
+                              <div className="button-container-2  portfolio-type-button-container">
+                                <span className="mas " >View more</span>
                                 <button type="button" name="Hover">Artist</button>
                               </div>
                             </Link>
@@ -45,10 +45,12 @@ class SelectType extends React.Component {
                             >
                             Developer Resume
                             </button> */}
-                            <div class="button-container-1 portfolio-type-button-container">
-                                <span class="mas ">View more</span>
-                              <button id='work' type="button" name="Hover">Developer</button>
-                            </div>
+                            <Link to="/portfolio/developer">
+                              <div className="button-container-1 portfolio-type-button-container">
+                                  <span className="mas ">View more</span>
+                                <button id='work' type="button" name="Hover">Developer</button>
+                              </div>
+                            </Link>
                         </div>
                         
                         

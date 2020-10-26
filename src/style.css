@@ -1068,6 +1068,19 @@ BUTTON
   }
 }
 
+@media (max-width: 360px){
+  .portfolio-banner-button{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+@media (max-width: 312px){
+  .portfolio-banner-button{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+
 .css-1qrom1v{
   height: 88vh !important;
   display: flex !important;

@@ -299,7 +299,7 @@ class Contact extends React.Component {
             <div className="row">
               <div className="col-sm-12">
                 <div className="copyright-box">
-                  All Rights Reserved © 2020
+                  All Rights Reserved © 2020, Nelson Mavare
                 </div>
               </div>
             </div>

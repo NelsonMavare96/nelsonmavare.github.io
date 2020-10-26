@@ -180,8 +180,8 @@ class Portfolio extends React.Component {
                   <a
                     className="btn btn-primary btn js-scroll px-4"
                     style= {{margin:10}}
-                    href="#work"
-                    target="_blank"
+                    href={artistPortfolio?"/portfolio/artist":"/portfolio/developer"}
+                    //target="_blank"
                     role="button"
                   >
                     View more
