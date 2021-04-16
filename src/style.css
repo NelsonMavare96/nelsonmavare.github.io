@@ -1086,5 +1086,25 @@ BUTTON
   display: flex !important;
 }
 
+.slide-section{
+  background: black;
+  box-shadow: -10px 0px 18px 0px;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 100px 0 200px;
+  display:inline-block;
+}
+.slide-section::after{
+  position: absolute;
+  right: -50px;
+  content: "";
+  border-bottom: 25px solid white;
+  border-left: 25px solid white;
+  border-top: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+
 
 

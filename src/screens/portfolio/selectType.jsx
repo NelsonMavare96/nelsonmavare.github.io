@@ -1,22 +1,16 @@
 import React from "react";
-import "../stars.scss";
-import Typed from "react-typed";
-import * as constants from "../../constants"
-import Navbar from '../navbar.jsx';
+import "../../components/stars.scss";
+import Navbar from '../../components/navbar.jsx';
 import {Link} from 'react-router-dom'
 
 class SelectType extends React.Component {
   
   render() {
     return (
-      //<div id="home" className="intro route bg-image background">
       <div> 
-      <Navbar/>
+        <Navbar/>
         <div id="portfolio" className="intro route bg-image">
-          <div className="intro route bg-image" style={{backgroundColor:"rgb(14 21 29)"}}>
-            {/* <div id="stars" />
-            <div id="stars2" />
-            <div id="stars3" /> */}
+          <div className="intro route bg-image " style={{backgroundColor:"#1B2735"}}>
 
             <div className="intro-content display-table">
               <div className="table-cell">
@@ -38,13 +32,6 @@ class SelectType extends React.Component {
                             </Link>
                         </div>
                         <div className="col-md-6 center-elements">
-                            {/* <button
-                            className="btn btn js-scroll px-4 portfolio-type-button-container"
-                            style= {{margin:20}}
-                            href="#work"
-                            >
-                            Developer Resume
-                            </button> */}
                             <Link to="/portfolio/developer">
                               <div className="button-container-1 portfolio-type-button-container">
                                   <span className="mas ">View more</span>

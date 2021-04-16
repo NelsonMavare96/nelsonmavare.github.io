@@ -1,6 +1,6 @@
 import React from "react";
-import PortfolioElement from "./portfolio/portfolioElement.jsx"
-import * as constants from "../constants";
+import PortfolioElement from "../../../components/portfolio/portfolioElement.jsx"
+import * as constants from "../../../constants";
 // import { useTransition, animated } from "react-spring";
 // import { Spring } from 'react-spring/renderprops'
 // import { Transition, animated } from 'react-spring/renderprops'
@@ -14,7 +14,7 @@ class Portfolio extends React.Component {
       artistPortfolio: true,
       devPortfolio: false,
       artElements: [
-        { 
+        {
           id: "max1-gallery", 
           title:"'Max y la máquina de tercera dimensión, el cuerno de cristal'", 
           more:"Written by: Leduar Targen.", 

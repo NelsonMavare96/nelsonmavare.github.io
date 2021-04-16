@@ -11,20 +11,17 @@ import history from '../history'
 
 //import components
 import Navbar from '../components/navbar.jsx';
-import Intro from '../components/intro.jsx';
-import About from '../components/about.jsx';
-import Portfolio from '../components/portfolio.jsx';
-import Contact from '../components/contact.jsx';
 import BackToTop from '../components/back-top.jsx';
 import Preloader from '../components/preloader';
-import Social from '../components/social'
-
-import HomeLayout from './homeLayout'
-import SelectType from '../components/portfolio/selectType.jsx'
-
-import ArtistPortfolio from '../components/portfolio/artistPortfolio.jsx'
-import DeveloperPortfolio from '../components/portfolio/developerPortfolio.jsx'
 import PortfolioBanner from '../components/portfolio/banner'
+
+//import screens
+import PortfolioLayout from './portfolioLayout'
+import SelectType from '../screens/portfolio/selectType.jsx'
+import ArtistPortfolio from '../screens/portfolio/artistPortfolio.jsx'
+import DeveloperPortfolio from '../screens/portfolio/developerPortfolio.jsx'
+import HomeLayout from './homeLayout'
+
 
 class Main extends React.Component {
   constructor(props) {
@@ -34,8 +31,9 @@ class Main extends React.Component {
   render() {
     return(
     <Router>
-        <Switch>         
-            <Route exact path="/portfolio" component={SelectType} />
+        <Switch>        
+            <Route exact path="/portfolio" component={PortfolioLayout}/>   
+            <Route exact path="/portfolio/select-type" component={SelectType} />
             <Route exact path="/portfolio/artist">
               <Navbar/>
               <PortfolioBanner/>
@@ -48,7 +46,7 @@ class Main extends React.Component {
               <DeveloperPortfolio/>
               <BackToTop />
             </Route>
-            <Route exact path="/" component={HomeLayout}/>        
+            <Route exact path="/" component={HomeLayout}/>  
         </Switch>
     </Router>
     )
