@@ -7,7 +7,7 @@ import Portfolio from '../components/portfolio.jsx';
 import Contact from '../components/contact.jsx';
 import BackToTop from '../components/back-top.jsx';
 import Preloader from '../components/preloader';
-import Social from '../components/social'
+//import Social from '../components/social'
 
 class HomeLayout extends React.Component {
   constructor(props) {
@@ -20,7 +20,6 @@ class HomeLayout extends React.Component {
             <Navbar />
             <Intro />
             <Portfolio />
-            <Social/>
             <About />
             <Contact />
             <BackToTop />

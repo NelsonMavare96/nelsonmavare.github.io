@@ -1,7 +1,8 @@
 import React from "react";
 import "./stars.scss";
 import Typed from "react-typed";
-import * as constants from "../constants"
+import * as constants from "../constants/general"
+import ES from '../constants/language/spanish'
 
 class Intro extends React.Component {
   
@@ -17,16 +18,12 @@ class Intro extends React.Component {
         <div className="intro-content display-table">
           <div className="table-cell">
             <div className="container">
-              <h1 className="intro-title mb-4">Hello, I'm Nelson Mavare</h1>
+              <h1 className="intro-title mb-4">{ES.greetings}</h1>
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
                   <Typed
-                    strings={[
-                      "Front End Developer",
-                      "2D Digital Artist",
-                      "Software Engineer"
-                    ]}
+                    strings={ES.specalities}
                     typeSpeed={80}
                     backDelay={1100}
                     backSpeed={30}
@@ -42,16 +39,7 @@ class Intro extends React.Component {
                   target="_blank"
                   role="button"
                 >
-                  Artist Resume
-                </a>
-                <a
-                  className="btn btn-primary btn js-scroll px-4"
-                  style= {{margin:10}}
-                  href="#work"
-                  target="_blank"
-                  role="button"
-                >
-                  Developer Resume
+                  Descargar currículo
                 </a>
               </p>
               

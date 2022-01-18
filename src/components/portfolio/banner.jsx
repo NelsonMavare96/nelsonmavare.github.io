@@ -1,7 +1,7 @@
 import React from "react";
 import "./../stars.scss";
 import Typed from "react-typed";
-import * as constants from "../../constants"
+import * as constants from "../../constants/general"
 
 class Banner extends React.Component {
   constructor() {

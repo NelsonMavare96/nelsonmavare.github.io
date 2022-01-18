@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import PortfolioElement from "./portfolioElement.jsx"
-import * as constants from "../../constants";
+import * as constants from "../../constants/general";
 import Collapse from 'react-bootstrap/Collapse'
 //import Gallery from "react-photo-gallery";
 //import Carousel, { Modal, ModalGateway } from "react-images";

@@ -1,7 +1,5 @@
 import React from "react";
 import "../stars.scss";
-import Typed from "react-typed";
-import * as constants from "../../constants"
 import Navbar from '../navbar.jsx';
 import {Link} from 'react-router-dom'
 

@@ -122,10 +122,10 @@ class Contact extends React.Component {
     const {artistSocialMedia, developerSocialMedia, name, email, subject, message} = this.state;
     return (
       <section
-        className="paralax-mf footer-paralax bg-image sect-mt4 route"
+        className="paralax-mf footer-paralax bg-imageroute"
         //style={{ backgroundImage: "url(" + imageOverlay + ")" }}
       >
-       <div className="overlay-mf" style={{opacity:1}}></div> 
+       {/* <div className="overlay-mf" style={{opacity:1}}></div>  */}
         <div className="container">
           <div className="row">
             <div className="col-sm-12">

@@ -669,10 +669,14 @@ INTRO
 /*
 ABOUT
 */
+.about-mf {
+  background-color: #1B2735 ;
+}
 
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
+
 }
 
 .about-mf .about-img {

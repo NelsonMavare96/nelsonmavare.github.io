@@ -1,14 +1,10 @@
 import React from "react";
 import $ from "jquery";
-
-import myLogo from "../img/flycatcherLogo.jpg";
+import ES from "../constants/language/spanish";
 
 class Navbar extends React.Component {
   constructor() {
     super();
-    this.state = {
-      logo: myLogo
-    };
   }
 
   componentDidMount() {
@@ -38,7 +34,7 @@ class Navbar extends React.Component {
         document
           .querySelector(".navbar-expand-md")
           .classList.remove("navbar-trans");
-        this.setState({ logo: myLogo }); //usar para cambiar cuando el fondo es oscuro o claro
+        //this.setState({ logo: myLogo }); //usar para cambiar cuando el fondo es oscuro o claro
       } else {
         document
           .querySelector(".navbar-expand-md")
@@ -46,7 +42,7 @@ class Navbar extends React.Component {
         document
           .querySelector(".navbar-expand-md")
           .classList.remove("navbar-reduce");
-        this.setState({ logo: myLogo }); //usar para cambiar cuando el fondo es oscuro o claro
+        //this.setState({ logo: myLogo }); //usar para cambiar cuando el fondo es oscuro o claro
       }
     });
 
@@ -87,11 +83,7 @@ class Navbar extends React.Component {
       >
         <div className="container">
           <a className="navbar-brand js-scroll" href="#page-top">
-            <img
-              src={this.state.logo}
-              alt="logo"
-              style={{ maxWidth: "70px", borderRadius:100 }}
-            />
+            <text>Nelson Mavare</text>
           </a>
           <button
             className="navbar-toggler collapsed"
@@ -113,22 +105,22 @@ class Navbar extends React.Component {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link js-scroll active" href="/#home">
-                  Home
+                  {ES.navBar.home}
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="/portfolio">
-                  Portfolio
+                <a className="nav-link js-scroll" href="/#portfolio">
+                  {ES.navBar.portfolio}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="/#about">
-                  About
+                  {ES.navBar.about}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="/#contact">
-                  Contact
+                  {ES.navBar.contact}
                 </a>
               </li>
             </ul>
