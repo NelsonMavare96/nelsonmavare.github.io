@@ -10,21 +10,19 @@ import {
 import history from '../history'
 
 //import components
-import Navbar from '../components/navbar.jsx';
-import Intro from '../components/intro.jsx';
-import About from '../components/about.jsx';
-import Portfolio from '../components/portfolio.jsx';
-import Contact from '../components/contact.jsx';
-import BackToTop from '../components/back-top.jsx';
-import Preloader from '../components/preloader';
-import Social from '../components/social'
+import Navbar from '../views/navbar.jsx';
+import Intro from '../views/intro.jsx';
+import About from '../views/about.jsx';
+import Portfolio from '../views/portfolio.jsx';
+import Contact from '../views/contact.jsx';
+import BackToTop from '../views/back-top.jsx';
+import Preloader from '../views/preloader';
+import Social from '../views/social'
 
 import HomeLayout from './homeLayout'
-import SelectType from '../components/portfolio/selectType.jsx'
-
-import ArtistPortfolio from '../components/portfolio/artistPortfolio.jsx'
-import DeveloperPortfolio from '../components/portfolio/developerPortfolio.jsx'
-import PortfolioBanner from '../components/portfolio/banner'
+import SelectType from '../views/portfolio/selectType.jsx'
+import DeveloperPortfolio from '../views/portfolio/developerPortfolio.jsx'
+import PortfolioBanner from '../views/portfolio/banner'
 
 class Main extends React.Component {
   constructor(props) {
@@ -39,7 +37,6 @@ class Main extends React.Component {
             <Route exact path="/portfolio/artist">
               <Navbar/>
               <PortfolioBanner/>
-              <ArtistPortfolio/>
               <BackToTop />
             </Route>
             <Route exact path="/portfolio/developer">

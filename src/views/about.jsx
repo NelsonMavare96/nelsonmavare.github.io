@@ -4,7 +4,7 @@ class About extends React.Component {
   constructor() {
     super();
     this.state = {
-      skills: [
+      professionalSkills: [
         { id: "HTML5_skill", content: "HTML5", porcentage: "100%", value: "100" },
         { id: "CSS3_skill", content: "CSS3", porcentage: "100%", value: "100" },
         {
@@ -22,19 +22,25 @@ class About extends React.Component {
         {
           id: "NodeJS_skill",
           content: "NestJs(NodeJs)",
-          porcentage: "80%",
-          value: "80",
+          porcentage: "70%",
+          value: "70",
         },
         {
           id: "Python_skill",
           content: "Python",
-          porcentage: "70%",
+          porcentage: "60%",
           value: "60",
         },
         { id: "English", content: "Inglés", porcentage: "70%", value: "70" },
         {
           id: "Illustrator_skill",
-          content: "Herramientas de diseño (Illustrator/Figma)",
+          content: "Illustrator/Figma",
+          porcentage: "90%",
+          value: "90",
+        },
+        {
+          id: "Illustrator_skill",
+          content: "Photoshop",
           porcentage: "90%",
           value: "90",
         },
@@ -64,8 +70,8 @@ class About extends React.Component {
                       </div>
                       {ES.aboutMe.map((content) => {
                         return (
-                          <p className="lead" key={content.id}>
-                            {content.content}
+                          <p className="p-about" key={content.id}>
+                            <spam style={{fontSize:15}}>{"\u2B24"}</spam> {content.content}
                           </p>
                         );
                       })}
@@ -81,7 +87,7 @@ class About extends React.Component {
                     </div>
                     <div className="skill-mf">
                       {/* <p className="title-s">Skill</p> */}
-                      {this.state.skills.map((skill) => {
+                      {this.state.professionalSkills.map((skill) => {
                         return (
                           <React.Fragment key={skill.id}>
                             <span>{skill.content}</span>{" "}

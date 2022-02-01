@@ -1,13 +1,13 @@
 import React from "react";
 //import components
-import Navbar from '../components/navbar.jsx';
-import Intro from '../components/intro.jsx';
-import About from '../components/about.jsx';
-import Portfolio from '../components/portfolio.jsx';
-import Contact from '../components/contact.jsx';
-import BackToTop from '../components/back-top.jsx';
-import Preloader from '../components/preloader';
-//import Social from '../components/social'
+import Navbar from '../views/navbar.jsx';
+import Intro from '../views/intro.jsx';
+import About from '../views/about.jsx';
+import Portfolio from '../views/portfolio.jsx';
+import Contact from '../views/contact.jsx';
+import BackToTop from '../views/back-top.jsx';
+import Preloader from '../views/preloader';
+//import Social from '../views/social'
 
 class HomeLayout extends React.Component {
   constructor(props) {

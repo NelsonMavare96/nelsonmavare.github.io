@@ -813,6 +813,10 @@ CONTACT
   margin-top: 4rem;
 }
 
+.copyright-box {
+  color:#4e4e4e !important
+}
+
 /*
 FOOTER
 */
@@ -859,8 +863,8 @@ CONTACT
 
 .validation {
   color: red;
-  display: none;
-  margin: 0 0 20px;
+  /* display: none;
+  margin: 0 0 20px; */
   font-weight: 400;
   font-size: 13px;
 }
@@ -1089,6 +1093,3 @@ BUTTON
   height: 88vh !important;
   display: flex !important;
 }
-
-
-

@@ -3,18 +3,17 @@ import "./stars.scss";
 import Typed from "react-typed";
 import * as constants from "../constants/general"
 import ES from '../constants/language/spanish'
-
+import background from '../img/background-image.jpg'
 class Intro extends React.Component {
   
   render() {
     return (
       //<div id="home" className="intro route bg-image background"> 
-      <div id="home" className="intro route bg-image" style={{backgroundImage: "url("+constants.MAIN_PICTURE+")"}}>
+      <div id="home" className="intro route bg-image" style={{backgroundImage: `url(${background})`}}>
       <div className="intro route bg-image" style={{backgroundColor:"rgba(27, 39, 53, 0.65)"}}>
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
-
         <div className="intro-content display-table">
           <div className="table-cell">
             <div className="container">
@@ -35,14 +34,13 @@ class Intro extends React.Component {
                 <a
                   className="btn btn-primary btn js-scroll px-4"
                   style= {{margin:10}}
-                  href={constants.ARTIST_RESUME}
+                  href={constants.DEV_RESUME}
                   target="_blank"
                   role="button"
                 >
-                  Descargar currículo
+                  {ES.downloadResume}
                 </a>
               </p>
-              
             </div>
           </div>
         </div>

@@ -1,177 +1,171 @@
-
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100');
-$font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
 /**********************************************************************************/
 /**********************************************************************************/
 //Special thanks to https://codepen.io/pizza3 for this styling
 
-@mixin button($bcolor,
-$url,
-$x1,
-$y1,
-$bor,
-$col) {
- background: $bcolor;
- -webkit-mask: url($url);
- mask: url($url);
- -webkit-mask-size: $x1 $y1;
- mask-size: $x1 $y1;
- border: $bor;
- color: $col;
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
 }
-
 
 .button-container-1 {
- position: relative;
- width: 100px;
- height: 50px;
- color: #000;
- overflow: hidden;
- border: 1px solid;
- font-family: $font-family;
- font-weight: 300;
- font-size: 20px;
- transition: 0.5s;
- letter-spacing: 1px;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  color: #000;
+  overflow: hidden;
+  border: 1px solid;
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
   border-radius: 8px;
 
- button {
-  width: 101%;
-  height: 100%;
-  font-family: $font-family;
-  font-weight: 300;
-  font-size: 3vw;
-  letter-spacing: 1px;
-  font-weight: bold;
-
-  @include button(#000,
-  './img/sprites/nature-sprite.png',
-  2300%,
-  100%,
-  none,
-  #fff);
-  cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(22) forwards;
-  animation: ani2 0.7s steps(22) forwards;
-
-  &:hover {
-   -webkit-animation: ani 0.7s steps(22) forwards;
-   animation: ani 0.7s steps(22) forwards;
-  }
- }
-}
-
-.button-container-2 {
- position: relative;
- width: 100px;
- height: 50px;
- overflow: hidden;
- border: 1px solid #000;
- font-family: $font-family;
- font-weight: 300;
- transition: 0.5s;
- letter-spacing: 1px;
- border-radius: 8px;
-
- button {     
-  width: 101%;
-  height: 100%;
-  font-family: $font-family;
-  font-weight: 300;
-  font-size: 3vw;
-  letter-spacing: 1px;
-  font-weight: bold;
-
-  @include button(#000, './img/sprites/urban-sprite.png',
-  3000%,
-  100%,
-  none,
-  #fff);
-  cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(29) forwards;
-  animation: ani2 0.7s steps(29) forwards;
-
-  &:hover {
-   -webkit-animation: ani 0.7s steps(29) forwards;
-   animation: ani 0.7s steps(29) forwards;
-  }
- }
-}
-
-
-.mas {
-    position: absolute;
-    color: #000;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  button {
     width: 101%;
     height: 100%;
     font-family: $font-family;
     font-weight: 300;
-    position: absolute;
-    font-size: 2vw;
-    overflow: hidden;
-	  font-weight: bold;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    font-weight: bold;
 
+    @include button(#000, "./img/sprites/nature-sprite.png", 2300%, 100%, none, #fff);
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+
+    &:hover {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
+    }
+  }
+}
+
+.button-container-2 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid #000;
+  font-family: $font-family;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+    @include button(#000, "./img/sprites/urban-sprite.png", 3000%, 100%, none, #fff);
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+
+    &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+    }
+  }
+}
+
+.mas {
+  position: absolute;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 101%;
+  height: 100%;
+  font-family: $font-family;
+  font-weight: 300;
+  position: absolute;
+  font-size: 2vw;
+  overflow: hidden;
+  font-weight: bold;
 }
 
 @-webkit-keyframes ani {
- from {
-  -webkit-mask-position: 0 0;
-  mask-position: 0 0;
- }
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
- to {
-  -webkit-mask-position: 100% 0;
-  mask-position: 100% 0;
- }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @keyframes ani {
- from {
-  -webkit-mask-position: 0 0;
-  mask-position: 0 0;
- }
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 
- to {
-  -webkit-mask-position: 100% 0;
-  mask-position: 100% 0;
- }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 @-webkit-keyframes ani2 {
- from {
-  -webkit-mask-position: 100% 0;
-  mask-position: 100% 0;
- }
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 
- to {
-  -webkit-mask-position: 0 0;
-  mask-position: 0 0;
- }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 
 @keyframes ani2 {
- from {
-  -webkit-mask-position: 100% 0;
-  mask-position: 100% 0;
- }
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 
- to {
-  -webkit-mask-position: 0 0;
-  mask-position: 0 0;
- }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
 /****************************************************************************************************/
 /****************************************************************************************************/
 .center-elements {
-    justify-content: center;
-    display: flex;
+  justify-content: center;
+  display: flex;
 }
 
 .hide-section {
-    display: none;
+  display: none;
 }
 
+.modal-body {
+  flex: 1;
+  padding-right: 3rem;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.p-about {
+  text-align: justify;
+}
