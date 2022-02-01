@@ -159,13 +159,46 @@ $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
   display: none;
 }
 
-.modal-body {
+.modal-header { 
+  padding: 0.5rem 1rem;
+}
+
+.portfiolio-modal-body {
   flex: 1;
   padding-right: 3rem;
-  height: 80vh;
   overflow-y: auto;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .portfiolio-modal-body {
+    height: 80vh;
+    margin-top: 0;
+  }
 }
 
 .p-about {
   text-align: justify;
+}
+
+.portfolio-carousel {
+  max-width: 37vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.modal-dialog {
+  margin: 1.75rem auto 0 auto;
+}
+
+.modal-title {
+  font-size: 1.2rem;
 }

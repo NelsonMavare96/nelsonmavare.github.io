@@ -57,20 +57,20 @@ class Portfolio extends React.Component {
                     {ES.projectDetails}
                   </Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body >
                   <div className="row" style={{height:'100%'}}>
-                    <div className="col-md-5" style={{ padding: " 0 3vh" }}>
+                    <div className="col-md-6" style={{ padding: " 0 3vh" }}>
                       <Carousel fade>
                         {project.images.map((image) => {
                           return (
                             <Carousel.Item interval={2000}>
-                              <img className="d-block w-100" src={image} alt="Second slide" />
+                              <img className="d-block portfolio-carousel" src={image} alt="Second slide" />
                             </Carousel.Item>
                           );
                         })}
                       </Carousel>
                     </div>
-                    <div className="col-md-7 modal-body">
+                    <div className="col-md-6 portfiolio-modal-body">
                       <div className="title-box-2">
                         <h5 className="title-left">{project.title}</h5>
                       </div>
