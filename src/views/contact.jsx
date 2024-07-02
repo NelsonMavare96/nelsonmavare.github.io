@@ -1,7 +1,5 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import logoLinkedin from "@iconify/icons-ion/logo-linkedin";
-import logoGitHub from "@iconify/icons-ion/logo-github";
 import ES from "../constants/language/spanish";
 /* import logoBehance from "@iconify/icons-ion/logo-behance";
 import logoTwitter from "@iconify/icons-ion/logo-twitter";
@@ -21,12 +19,12 @@ class Contact extends React.Component {
       devSocialMedia: [
         {
           id: "linkedin",
-          content: logoLinkedin,
+          content: "ion:logo-linkedin",
           link: "https://www.linkedin.com/in/nelson-mavare-developer/",
         },
         {
           id: "github",
-          content: logoGitHub,
+          content: "ion:logo-github",
           link: "https://github.com/nelsonmavare",
         },
       ],
@@ -83,7 +81,8 @@ class Contact extends React.Component {
   }
 
   render() {
-    const { devSocialMedia, name, email, subject, message, isSubmitting, isButtonPressed } = this.state;
+    const { devSocialMedia, name, email, subject, message, isSubmitting, isButtonPressed } =
+      this.state;
     return (
       <section
         className="paralax-mf footer-paralax bg-imageroute"
@@ -258,7 +257,7 @@ class Contact extends React.Component {
             <div className="row">
               <div className="col-sm-12">
                 <div>
-                  <p className="copyright-box">All Rights Reserved © 2022, Nelson Mavare</p>
+                  <p className="copyright-box">All Rights Reserved © 2024, Nelson Mavare</p>
                 </div>
                 <a href="https://www.freepik.es/vectores/fondo">
                   Vector de Fondo creado por freepik - www.freepik.es

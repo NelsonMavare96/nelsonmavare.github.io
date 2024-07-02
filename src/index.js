@@ -1,9 +1,7 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
-import { render } from 'react-dom'
+import ReactDOM from 'react-dom/client';
 
 //import css in order
-import 'normalize.css';
 import './animate.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './img/icons/css/ionicons.css';
@@ -14,18 +12,19 @@ import './styles.scss'
 
 //import js libraries
 import 'jquery/dist/jquery.min.js';
-import 'popper.js/dist/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './libs/easing.js';
 import 'lightbox2/dist/js/lightbox.min.js';
 
 import * as serviceWorker from './serviceWorker';
 
-import MainLayout from './layouts/mainLayout'
+import HomeLayout from './layouts/homeLayout.js';
 
-render(
-    <MainLayout/>,
-document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <HomeLayout/>
+);
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,5 +1,4 @@
 import React from "react";
-import "../stars.scss";
 import Navbar from '../navbar.jsx';
 import {Link} from 'react-router-dom'
 

@@ -1,11 +1,9 @@
 import React from "react";
 
 class PortfolioElement extends React.Component {
-  constructor() {
-    super();
-  }
+
   render() {
-    const { element, key, setProject } = this.props;
+    const { element, setProject } = this.props;
     return (
       <div className="col-md-4" key={element.id} onClick={() => setProject(element)}>
         <div className="work-box" style={{ marginBottom: "2rem" }}>

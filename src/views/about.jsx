@@ -21,6 +21,12 @@ class About extends React.Component {
         },
         {
           id: "NodeJS_skill",
+          content: "Express(NodeJs)",
+          porcentage: "70%",
+          value: "70",
+        },
+        {
+          id: "NodeJS_skill",
           content: "NestJs(NodeJs)",
           porcentage: "70%",
           value: "70",
@@ -31,20 +37,8 @@ class About extends React.Component {
           porcentage: "60%",
           value: "60",
         },
-        { id: "English", content: "Inglés", porcentage: "70%", value: "70" },
-        {
-          id: "Illustrator_skill",
-          content: "Illustrator/Figma",
-          porcentage: "90%",
-          value: "90",
-        },
-        {
-          id: "Illustrator_skill",
-          content: "Photoshop",
-          porcentage: "90%",
-          value: "90",
-        },
         { id: "Git", content: "Git", porcentage: "100%", value: "100" },
+        /* { id: "English", content: "Inglés", porcentage: "70%", value: "70" }, */
         /* {
           id: "VanillaJS_skill",
           content: "VanillaJS",

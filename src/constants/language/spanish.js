@@ -2,35 +2,56 @@ import * as general from "../general";
 
 const ES = {
   //ABOUT ME
-  aboutMeTitle: "Sobre mis habilidades y servicios",
+  aboutMeTitle: "Sobre mis habilidades y experiencia",
   aboutMe: [
     {
       id: "first-p-about",
       content:
-        "Diseño y plafinicación de software: Como ingeniero en informática me especializo en el estudio del modelo de negocio y plantear una solución tecnológica factible definiendo los flujos de información necesario en cada uno de los procesos y estableciendo un modelo de datos correspondiente al caso.",
+        "Diseño y planificación de software: Como ingeniero en informática, me especializo en analizar modelos de negocio y en plantear soluciones tecnológicas factibles. Defino los flujos de información necesarios en cada proceso y establezco modelos de datos correspondientes a cada caso.",
     },
     {
       id: "second-p-about",
       content:
-        "Manejo de tecnologías para el desarrollo de la aplicación del lado del cliente tanto web como móvil, teniendo una mayor experiencia laboral en esta última con el uso de React Native.",
+        "Desarrollo de aplicaciones: Tengo experiencia en el desarrollo de aplicaciones tanto web como móviles, con un enfoque particular en React Native para aplicaciones móviles. En los últimos años, me he centrado en desarrollar apps (plugins) para tiendas de Shopify, utilizando React Native y APIs en Node.",
     },
     {
       id: "third-p-about",
       content:
-        "Desarrollo y despliegue de API's haciendo uso de NodeJs y trabajando con servicios de Amazon Web Service como EC2, S3, RDS y Route 53.",
+        "Desarrollo y despliegue de API's: Tengo conocimientos en el uso de NodeJs y en trabajar con servicios de Amazon Web Services como EC2, S3, RDS y Route 53. Además, he gestionado bases de datos MySQL y Firebase, y he integrado APIs de GraphQL y REST de Shopify.",
     },
-    /*     {
+    {
       id: "fourth-p-about",
-      content: "algo más",
-    }, */
+      content:
+        "Proyectos recientes: He trabajado en una variedad de aplicaciones, con los últimos dos proyectos centrados en Shopify. En total, he llevado a cabo seis proyectos exitosos.",
+    },
+    {
+      id: "fifth-p-about",
+      content:
+        "Despliegue de proyectos: Tengo experiencia en el despliegue de proyectos en servidores, principalmente usando Fly.io, garantizando que las aplicaciones estén disponibles y funcionen correctamente en el entorno de producción.",
+    },
+    {
+      id: "sixth-p-about",
+      content:
+        "Procesamiento asíncrono: Implemento colas en las APIs para procesar tareas de manera asíncrona utilizando BullMQ y Redis, mejorando así la eficiencia y la capacidad de respuesta de las aplicaciones.",
+    },
+    {
+      id: "seventh-p-about",
+      content:
+        "Integración continua: Utilizo integración continua para verificar los cambios antes de cada actualización, asegurando la calidad y estabilidad del código antes de su despliegue en producción.",
+    },
+    {
+      id: "eighth-p-about",
+      content:
+        "Gestión de proyectos: Además de mi rol técnico, he actuado como Project Manager, gestionando las actividades del proyecto en desarrollo y coordinando con otros departamentos como QA y Diseño. Me aseguro de que cada fase del proyecto se ejecute de manera eficiente y efectiva, trabajando en equipo para cumplir con los objetivos establecidos.",
+    },
   ],
   //CONTACT
-  errorForm:{
-    name: 'Debe ingresar su nombre',
-    email: 'Debe ingresar su correo',
-    emailFormat: 'Formato de correo no válido',
-    subject: 'Debe ingresar el asunto',
-    message: 'Debe ingresar el mensaje'
+  errorForm: {
+    name: "Debe ingresar su nombre",
+    email: "Debe ingresar su correo",
+    emailFormat: "Formato de correo no válido",
+    subject: "Debe ingresar el asunto",
+    message: "Debe ingresar el mensaje",
   },
   contactTitle: "Envíame un mensaje",
   contactSecondTitle: "Contacto",
@@ -48,10 +69,10 @@ const ES = {
   portfolioText:
     "Proyecto en los que he estado involucrado como desarrollador u otros puestos a lo largo de mi carrera",
   navBar: {
-    home: "inicio",
-    portfolio: "portafolio",
-    about: "sobre mi",
-    contact: "contáctame",
+    home: { label: "inicio", id: "#home" },
+    portfolio: { label: "portafolio", id: "#portfolio" },
+    about: { label: "sobre mi", id: "#about" },
+    contact: { label: "contáctame", id: "#contact" },
   },
   downloadResume: "Ver currículo",
   greetings: "Bienvenido a mi portafolio profesional",
@@ -113,6 +134,18 @@ const ES = {
         "\nLa app móvil ha sido desarrollada haciendo uso de React Native, Redux para el manejo de estados generales, React Navigation para la transición entre pantallas, OneSignal para las notificaciones push y Socket.io para el chat integrado" +
         "\n Para la parte del servidor se ha utilizado NodeJs con NestJs, TypeORM para el mapeo de los objetos, OneSignal para la integración de notificacones push dentro de la app, Swagger con el fin de obtener una correcta documentación, SDK de AWS para el uso de Butckets en S3, además esta API está enlazada a Transbank como pasarela de pago seguro para los usuarios de la aplicación.",
       rol: ["Project Manager", "DBA", "Desarrollador fullstack"],
+    },
+    {
+      id: "alt-text-generator-gallery",
+      title: "'Alt Text Generator'",
+      team: "Equipo de trabajo: 6 personas",
+      more: "Shopify app (pluggin)",
+      year: "Febrero (2024) - Julio (2024)",
+      images: general.AKKORDAR,
+      description:
+        "Alt Text Generator (AATG) es una avanzada herramienta de gestión de imágenes de productos específicamente diseñada para plataformas de comercio electrónico como Shopify y WordPress. Utilizando inteligencia artificial, la aplicación genera automáticamente descripciones de texto alternativo (alt text) para imágenes de productos, lo que mejora significativamente la accesibilidad del sitio y la optimización en motores de búsqueda (SEO). Desarrollada con tecnologías modernas como TypeScript y React para el frontend, y Node.js con Express para el backend, la aplicación se despliega y gestiona en la plataforma de alojamiento Fly.io. Además, integra servicios de OpenAI GPT-4 para el análisis de imágenes y la generación de texto, lo que permite automatizar procesos que tradicionalmente son manuales y laboriosos." +
+        "\nEl objetivo principal de la aplicación es reducir el tiempo y esfuerzo necesarios para actualizar descripciones de imágenes, mejorando al mismo tiempo la accesibilidad y visibilidad de los productos en la web. La solución ofrece una integración sencilla con plataformas de comercio electrónico, facilitando a los usuarios la actualización de sus tiendas sin necesidad de conocimientos técnicos avanzados. La arquitectura de la aplicación está diseñada para ser escalable, capaz de manejar grandes volúmenes de datos y tráfico, asegurando un rendimiento consistente y confiable. Además, se presta especial atención a la facilidad de uso, proporcionando una interfaz intuitiva que permite a los comerciantes gestionar sus productos y configuraciones de manera eficiente y eficaz. Con estas características, la aplicación no solo optimiza el SEO y la accesibilidad, sino que también automatiza y simplifica la gestión de tiendas en línea, ofreciendo una solución integral para comerciantes modernos.",
+      rol: ["Project Manager", "DBA", "Fullstack Developer"],
     },
   ],
   year: "Año",
