@@ -93,6 +93,7 @@ const ES = {
         "Componente móvil de compety (www.compety.app), una aplicación desarrollada con el framework React Native, React Router para el manejo de pantallas, y Redux para los estados generales de la app." +
         "\n ",
       rol: ["Desarrollador frontend"],
+      presentationType:'none'
     },
     {
       id: "nephron-gallery",
@@ -107,6 +108,7 @@ const ES = {
       year: "2020",
       images: general.NEPHRON,
       rol: ["Project manager", "Desarrollador frontend"],
+      presentationType:'none'
     },
     {
       id: "foodwize-gallery",
@@ -120,6 +122,7 @@ const ES = {
         'Nuestros platos son elaborados diariamente por chefs socios, asegurando una oferta ética y llave en mano a nuestros clientes." (Extracto recuperado de www.foodwize.co).' +
         "\n Este proyecto ha sido desarrollado utilizando React Native soportando los sistemas operativos Android y iOS, en su estructura se ha utilizado Redux para manejos de estado general, integración de pagos mediante Stripe, inicio de sesión y registro con Google, Facebook y Apple, manejo de pantallas haciendo uso de React Navigation, y OneSignal para las notificaciones push.",
       rol: ["Desarrollador frontend"],
+      presentationType:'none'
     },
     {
       id: "akkordar-gallery",
@@ -134,18 +137,22 @@ const ES = {
         "\nLa app móvil ha sido desarrollada haciendo uso de React Native, Redux para el manejo de estados generales, React Navigation para la transición entre pantallas, OneSignal para las notificaciones push y Socket.io para el chat integrado" +
         "\n Para la parte del servidor se ha utilizado NodeJs con NestJs, TypeORM para el mapeo de los objetos, OneSignal para la integración de notificacones push dentro de la app, Swagger con el fin de obtener una correcta documentación, SDK de AWS para el uso de Butckets en S3, además esta API está enlazada a Transbank como pasarela de pago seguro para los usuarios de la aplicación.",
       rol: ["Project Manager", "DBA", "Desarrollador fullstack"],
+      presentationType:'none'
     },
     {
       id: "alt-text-generator-gallery",
-      title: "'Alt Text Generator'",
+      title: "'AI Alt Text Generator'",
       team: "Equipo de trabajo: 6 personas",
       more: "Shopify app (pluggin)",
       year: "Febrero (2024) - Julio (2024)",
-      images: general.AKKORDAR,
+      images: general.AI_ALT_TEXT_GENERATOR,
       description:
-        "Alt Text Generator (AATG) es una avanzada herramienta de gestión de imágenes de productos específicamente diseñada para plataformas de comercio electrónico como Shopify y WordPress. Utilizando inteligencia artificial, la aplicación genera automáticamente descripciones de texto alternativo (alt text) para imágenes de productos, lo que mejora significativamente la accesibilidad del sitio y la optimización en motores de búsqueda (SEO). Desarrollada con tecnologías modernas como TypeScript y React para el frontend, y Node.js con Express para el backend, la aplicación se despliega y gestiona en la plataforma de alojamiento Fly.io. Además, integra servicios de OpenAI GPT-4 para el análisis de imágenes y la generación de texto, lo que permite automatizar procesos que tradicionalmente son manuales y laboriosos." +
+        "AI Alt Text Generator (AATG) es una avanzada herramienta de gestión de imágenes de productos específicamente diseñada para plataformas de comercio electrónico como Shopify y WordPress. Utilizando inteligencia artificial, la aplicación genera automáticamente descripciones de texto alternativo (alt text) para imágenes de productos, lo que mejora significativamente la accesibilidad del sitio y la optimización en motores de búsqueda (SEO). Desarrollada con tecnologías modernas como TypeScript y React para el frontend, y Node.js con Express para el backend, la aplicación se despliega y gestiona en la plataforma de alojamiento Fly.io. Además, integra servicios de OpenAI GPT-4 para el análisis de imágenes y la generación de texto, lo que permite automatizar procesos que tradicionalmente son manuales y laboriosos." +
         "\nEl objetivo principal de la aplicación es reducir el tiempo y esfuerzo necesarios para actualizar descripciones de imágenes, mejorando al mismo tiempo la accesibilidad y visibilidad de los productos en la web. La solución ofrece una integración sencilla con plataformas de comercio electrónico, facilitando a los usuarios la actualización de sus tiendas sin necesidad de conocimientos técnicos avanzados. La arquitectura de la aplicación está diseñada para ser escalable, capaz de manejar grandes volúmenes de datos y tráfico, asegurando un rendimiento consistente y confiable. Además, se presta especial atención a la facilidad de uso, proporcionando una interfaz intuitiva que permite a los comerciantes gestionar sus productos y configuraciones de manera eficiente y eficaz. Con estas características, la aplicación no solo optimiza el SEO y la accesibilidad, sino que también automatiza y simplifica la gestión de tiendas en línea, ofreciendo una solución integral para comerciantes modernos.",
       rol: ["Project Manager", "DBA", "Fullstack Developer"],
+      presentation: 
+      "https://res.cloudinary.com/clowth/video/upload/v1720035264/AI_Alt_Text_Generator_for_Shopify_V2_nt4kuu.mp4",
+      presentationType:'Carousel'
     },
   ],
   year: "Año",

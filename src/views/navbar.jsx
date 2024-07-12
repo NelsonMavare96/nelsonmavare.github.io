@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="container">
         <a className="navbar-brand js-scroll" href="#page-top">
-          <text>Nelson Mavare</text>
+          <p>Nelson Mavare</p>
         </a>
         <button
           className="navbar-toggler collapsed"
@@ -46,9 +46,9 @@ const Navbar = () => {
         </button>
         <div className="navbar-collapse collapse justify-content-end" id="navbarDefault">
           <ul className="navbar-nav">
-            {Object.entries(ES.navBar).map(([id, content]) => {
+            {Object.entries(ES.navBar).map(([id, content], index) => {
               return (
-                <li className="nav-item">
+                <li className="nav-item" key={index}>
                   <a
                     className={`nav-link js-scroll ${id === activedNavItem ? "active" : ""}`}
                     href={`/#${id}`}

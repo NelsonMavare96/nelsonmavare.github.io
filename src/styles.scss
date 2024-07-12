@@ -159,7 +159,7 @@ $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
   display: none;
 }
 
-.modal-header { 
+.modal-header {
   padding: 0.5rem 1rem;
 }
 
@@ -185,6 +185,14 @@ $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica 
   max-width: 37vh;
   margin-left: auto;
   margin-right: auto;
+}
+
+.carousel-control-prev {
+  width: 2rem;
+}
+
+.carousel-control-next {
+  width: 2rem;
 }
 
 .carousel-control-prev-icon {

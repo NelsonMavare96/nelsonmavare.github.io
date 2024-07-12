@@ -62,10 +62,10 @@ class About extends React.Component {
                       <div className="title-box-2">
                         <h5 className="title-left">{ES.aboutMeTitle}</h5>
                       </div>
-                      {ES.aboutMe.map((content) => {
+                      {ES.aboutMe.map((content, index) => {
                         return (
-                          <p className="p-about" key={content.id}>
-                            <spam style={{fontSize:15}}>{"\u2B24"}</spam> {content.content}
+                          <p className="p-about" key={index}>
+                            <span style={{ fontSize: 15 }}>{"\u2B24"}</span> {content.content}
                           </p>
                         );
                       })}
@@ -81,9 +81,9 @@ class About extends React.Component {
                     </div>
                     <div className="skill-mf">
                       {/* <p className="title-s">Skill</p> */}
-                      {this.state.professionalSkills.map((skill) => {
+                      {this.state.professionalSkills.map((skill, index) => {
                         return (
-                          <React.Fragment key={skill.id}>
+                          <div key={index}>
                             <span>{skill.content}</span>{" "}
                             <span className="pull-right">{skill.porcentage}</span>
                             <div className="progress">
@@ -96,7 +96,7 @@ class About extends React.Component {
                                 aria-valuemax="100"
                               ></div>
                             </div>
-                          </React.Fragment>
+                          </div>
                         );
                       })}
                     </div>

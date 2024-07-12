@@ -1,33 +1,35 @@
-export const IMG_PROFILE = "https://res.cloudinary.com/clowth/image/upload/v1603471308/profile_image_fjiyml.jpg"
+export const IMG_PROFILE =
+  "https://res.cloudinary.com/clowth/image/upload/v1603471308/profile_image_fjiyml.jpg";
 
-export const MAIN_PICTURE = "https://res.cloudinary.com/clowth/image/upload/v1602784728/Griffin_iocdbf.jpg"
+export const MAIN_PICTURE =
+  "https://res.cloudinary.com/clowth/image/upload/v1602784728/Griffin_iocdbf.jpg";
 
-export const DEV_RESUME = "https://drive.google.com/file/d/1LOThgaWzlAMP7yw5WGGCHMeF_mBxoG3G/view?usp=sharing"
+export const DEV_RESUME =
+  "https://drive.google.com/file/d/1LOThgaWzlAMP7yw5WGGCHMeF_mBxoG3G/view?usp=sharing";
 
 /****************************************************************************************************** */
 /********************************************Developer************************************************* */
 /****************************************************************************************************** */
 
 export const NEPHRON = [
-    "https://res.cloudinary.com/clowth/image/upload/v1602865747/Nephron/Screenshot_2020-07-04-15-55-44-193_com.test.test_wwcsvw.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675365/Nephron/Pantalla_principal_xmx3c0.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675363/Nephron/Pantalla_principal2_jiz0jk.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675363/Nephron/Pantalla_principal3_t25dgv.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603674921/Nephron/Login_mngv4p.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675054/Nephron/Pantalla_inicio-servicios_amjkuw.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675238/Nephron/Detalle_mi_servicio_pajtdu.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675234/Nephron/Agenda_con_mis_servicios_ee7uxa.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675236/Nephron/Listado_especialistas_tebwdv.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675015/Nephron/mi_perfil_dcegmr.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675010/Nephron/editar_perfil_b2tbyl.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675017/Nephron/editar_perfil_con_contrase%C3%B1a_pbzc4a.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675016/Nephron/expediente_ochat8.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603675018/Nephron/detalle_expediente_f2cryw.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603676068/Nephron/statistics1_sepiz6.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603676220/Nephron/Screenshot_2020-06-03-10-04-57-402_host.exp.exponent_hjuda5.jpg",
-    "https://res.cloudinary.com/clowth/image/upload/v1603676067/Nephron/statistics_xbig3b.jpg"
-
-]
+  "https://res.cloudinary.com/clowth/image/upload/v1602865747/Nephron/Screenshot_2020-07-04-15-55-44-193_com.test.test_wwcsvw.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675365/Nephron/Pantalla_principal_xmx3c0.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675363/Nephron/Pantalla_principal2_jiz0jk.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675363/Nephron/Pantalla_principal3_t25dgv.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603674921/Nephron/Login_mngv4p.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675054/Nephron/Pantalla_inicio-servicios_amjkuw.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675238/Nephron/Detalle_mi_servicio_pajtdu.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675234/Nephron/Agenda_con_mis_servicios_ee7uxa.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675236/Nephron/Listado_especialistas_tebwdv.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675015/Nephron/mi_perfil_dcegmr.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675010/Nephron/editar_perfil_b2tbyl.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675017/Nephron/editar_perfil_con_contrase%C3%B1a_pbzc4a.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675016/Nephron/expediente_ochat8.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603675018/Nephron/detalle_expediente_f2cryw.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603676068/Nephron/statistics1_sepiz6.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603676220/Nephron/Screenshot_2020-06-03-10-04-57-402_host.exp.exponent_hjuda5.jpg",
+  "https://res.cloudinary.com/clowth/image/upload/v1603676067/Nephron/statistics_xbig3b.jpg",
+];
 
 export const COMPETY = [
   "https://res.cloudinary.com/clowth/image/upload/v1642521360/compety/compety003_aznfbh.jpg",
@@ -47,7 +49,7 @@ export const COMPETY = [
   "https://res.cloudinary.com/clowth/image/upload/v1642521359/compety/compety014_pw1kcd.jpg",
   "https://res.cloudinary.com/clowth/image/upload/v1642521353/compety/compety015_ykryyw.jpg",
   "https://res.cloudinary.com/clowth/image/upload/v1642521360/compety/compety016_x3dnbs.jpg",
-]
+];
 
 export const FOODWIZE = [
   "https://res.cloudinary.com/clowth/image/upload/v1642622524/Foodwize/foodwize001_i7m4uz.png",
@@ -69,7 +71,7 @@ export const FOODWIZE = [
   "https://res.cloudinary.com/clowth/image/upload/v1642622631/Foodwize/foodwize011_ewxydr.png",
   "https://res.cloudinary.com/clowth/image/upload/v1642622625/Foodwize/foodwize0012_cor52u.png",
   "https://res.cloudinary.com/clowth/image/upload/v1642622638/Foodwize/foodwize0013_ryc2qt.png",
-]
+];
 
 export const AKKORDAR = [
   "https://res.cloudinary.com/clowth/image/upload/v1643248008/akkordar/akk000_opuvip.png",
@@ -121,4 +123,11 @@ export const AKKORDAR = [
   "https://res.cloudinary.com/clowth/image/upload/v1643247999/akkordar/akk032_xule7e.png",
   "https://res.cloudinary.com/clowth/image/upload/v1643248005/akkordar/akk033_ddjtgk.png",
   "https://res.cloudinary.com/clowth/image/upload/v1643247978/akkordar/akk034_kvbdoi.png",
-]
+];
+
+export const AI_ALT_TEXT_GENERATOR = [
+  "https://res.cloudinary.com/clowth/image/upload/v1720035441/App-Logo-_Square_l0nrea.png",
+  "https://res.cloudinary.com/clowth/image/upload/v1720035440/App-Logo-rectangular_a8aptx.png",
+  "https://res.cloudinary.com/clowth/image/upload/v1720035524/image_5_ar1x18.png",
+  "https://res.cloudinary.com/clowth/image/upload/v1720035442/thumbnail_nhf1ih.png",
+];

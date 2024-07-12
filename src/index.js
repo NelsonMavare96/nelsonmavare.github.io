@@ -15,7 +15,6 @@ import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './libs/easing.js';
 import 'lightbox2/dist/js/lightbox.min.js';
-
 import * as serviceWorker from './serviceWorker';
 
 import HomeLayout from './layouts/homeLayout.js';
